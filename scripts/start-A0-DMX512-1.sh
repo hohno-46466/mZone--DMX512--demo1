@@ -8,6 +8,9 @@ PROJECT_ID=A0
 PROJECT_DIR=$HOME/workspace/Scripts/screenCTRL
 PROJECT_FILE=${PROJECT_DIR}/Project.cfg
 
+SUDO=
+SUDO=sudo
+
 MQTT_TOPIC=hohno/DMX512
 DEF_TTYPORT=/dev/ttyACM-A0_DMX512
 
@@ -21,7 +24,7 @@ ls -l $TTYPORT || exit 9
 ls -lL $TTYPORT || exit 8 
 
 set -x
-mosquitto_sub -t $MQTT_TOPIC | awk '{printf "%s\n",$0; fflush();if ((NR%6)==0){system("sleep 0.01");printf "--------\n";}}' | cu -s 57600 -l $TTYPORT | cat -u -n
+mosquitto_sub -t $MQTT_TOPIC | awk '{printf "%s\n",$0; fflush();if ((NR%6)==0){system("sleep 0.01");printf "--------\n";}}' | $sudo cu -s 57600 -l $TTYPORT | cat -u -n
 set +x
 
 exit $?
