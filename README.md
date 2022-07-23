@@ -11,8 +11,8 @@
      
      1 directory, 6 files (Sun Jun  5 23:23:15 JST 2022)
 
-Note: 	url = https://github.com/hohno-46466/mZone--DMX512--demo1
+Note: url = https://github.com/hohno-46466/mZone--DMX512--demo1
 
-Note:   url = git@github.com:hohno-46466/mZone--DMX512--demo1.git
+Note: url = git@github.com:hohno-46466/mZone--DMX512--demo1.git
 
 -EOF-
