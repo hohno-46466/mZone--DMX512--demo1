@@ -4,6 +4,7 @@
 # Prev update: Sun Apr  4 08:34:57 JST 2021
 # Last update: Sat Aug 20 10:34:06 JST 2022
 
+
 # ローカルブローカの $MQTT_TOPIC1 から購読したメッセージを awk で加工してローカルブローカの $MQTT_TOPIC2 に出版する
 # $MQTT_TOPIC1 のメッセージは KORG nanoKONTROL2 用のスクリプトからの出力を想定している
 
