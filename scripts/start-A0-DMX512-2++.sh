@@ -4,7 +4,6 @@
 # Prev update: Sun Apr  4 08:34:57 JST 2021
 # Last update: Sat Aug 20 10:34:06 JST 2022
 
-
 # ローカルブローカの $MQTT_TOPIC1 から購読したメッセージを awk で加工してローカルブローカの $MQTT_TOPIC2 に出版する
 # $MQTT_TOPIC1 のメッセージは KORG nanoKONTROL2 用のスクリプトからの出力を想定している
 
@@ -18,6 +17,6 @@ mosquitto_sub -t $MQTT_TOPIC1 \
 | awk '{if ($2 != xx[$1]) {xx[$1]=$2; printf " %s\n",$0; fflush()}}' \
 | mosquitto_pub -l -t $MQTT_TOPIC2
 
-exit 0
+exit $?
 
 # $9+(($9>=120)?$13:0),$10,$11,$12;
