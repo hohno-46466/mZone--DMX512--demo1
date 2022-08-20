@@ -8,8 +8,8 @@
 # $MQTT_TOPIC1 のメッセージは KORG nanoKONTROL2 用のスクリプトからの出力を想定している
 
 PROJECT_ID=A0
-MQTT_TOPIC1=hohno/data00
-MQTT_TOPIC2=hohno/DMX512
+MQTT_TOPIC1=${1:-"hohno/data00"}
+MQTT_TOPIC2=${2:-"hohno/DMX512"}
 
 #
 
