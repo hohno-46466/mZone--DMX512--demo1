@@ -11,8 +11,6 @@ PROJECT_ID=A0
 MQTT_TOPIC1=${1:-"hohno/data00"}
 MQTT_TOPIC2=${2:-"hohno/DMX512"}
 
-#
-
 set -x
 mosquitto_sub -t $MQTT_TOPIC1 \
 | awk '{printf "1c %dw\n201c %dw\n2c %dw\n202c %dw\n4c %dw\n206c %dw\n6c %dw\n203c %dw\n7c %dw\n203c %dw\n8c %dw\n203c %dw\n9c %dw\n203c %dw\n5c %dw\n205c %dw\n", $1,$1, $2,$2, $3,$3, $4,12, $5,32, $6,40, $7,4, $8,255; fflush()}' \
