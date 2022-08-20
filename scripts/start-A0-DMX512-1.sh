@@ -2,7 +2,11 @@
 
 # First version: Mon Sep 14 18:48:18 JST 2020
 # Prev update: Fri Sep 18 21:55:48 JST 2020
-# Last update: Mon Sep 21 07:39:11 JST 2020
+# Prev update: Mon Sep 21 07:39:11 JST 2020
+# Last update: Sat Aug 20 10:32:56 JST 2022
+
+# ローカルブローカの $MQTT_TOPIC からメッセージを購読し $TTYPORT に送信する．
+# $TTYPORT から読みだしたメッセージを標準出力に出力する
 
 PROJECT_ID=A0
 PROJECT_DIR=$HOME/workspace/Scripts/screenCTRL

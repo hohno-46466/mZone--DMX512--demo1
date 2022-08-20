@@ -1,7 +1,10 @@
 #! /bin/sh
 
 # First version: Mon Sep 14 18:48:18 JST 2020
-# Last update: Sun Apr  4 08:35:33 JST 2021
+# Prev update: Sun Apr  4 08:35:33 JST 2021
+# Last update: Sat Aug 20 10:39:16 JST 2022
+
+# KORG nanoKONTROL2 からデータを受け取り awk で加工して $MQTT_TOPIC_OUT に出版している
 
 PROJECT_ID=A0
 MQTT_BROKER=RPi20181113-2019X.local
