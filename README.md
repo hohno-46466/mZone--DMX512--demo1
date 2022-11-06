@@ -1,6 +1,6 @@
 # GitHub/mZone--DMX512--demo1
 
-     ./mZone--DMX512--demo1
+    ./mZone--DMX512--demo1
      ├──  README.md
      ├──  README.md.old
      └──  scripts/
