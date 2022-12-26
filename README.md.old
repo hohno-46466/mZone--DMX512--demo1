@@ -1,6 +1,6 @@
 # GitHub/mZone--DMX512--demo1
 
-     ./mZone--DMX512--demo1
+    ./mZone--DMX512--demo1
      ├──  README.md
      ├──  README.md.old
      └──  scripts/
@@ -11,7 +11,7 @@
          ├──  start-A0-DMX512-3-random.sh
          └──  start-A0-DMX512-4.sh
      
-     1 directory, 8 files (Tue Dec 20 21:47:36 JST 2022)
+     1 directory, 8 files (Thu Dec 22 04:09:34 JST 2022)
 
 
 Note: URL = https://github.com/hohno-46466/mZone--DMX512--demo1
