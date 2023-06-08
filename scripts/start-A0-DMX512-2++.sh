@@ -8,10 +8,8 @@
 # $MQTT_TOPIC1 のメッセージは KORG nanoKONTROL2 用のスクリプトからの出力を想定している
 
 PROJECT_ID=A0
-MQTT_TOPIC1=hohno/data00
-MQTT_TOPIC2=hohno/DMX512
-
-#
+MQTT_TOPIC1=${1:-"hohno/data00"}
+MQTT_TOPIC2=${2:-"hohno/DMX512"}
 
 set -x
 mosquitto_sub -t $MQTT_TOPIC1 \
@@ -19,6 +17,6 @@ mosquitto_sub -t $MQTT_TOPIC1 \
 | awk '{if ($2 != xx[$1]) {xx[$1]=$2; printf " %s\n",$0; fflush()}}' \
 | mosquitto_pub -l -t $MQTT_TOPIC2
 
-exit 0
+exit $?
 
 # $9+(($9>=120)?$13:0),$10,$11,$12;
